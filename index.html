@@ -9,7 +9,8 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="preload" as="image" href="assets/Profile picture and certificates/Rupam profile.png">
     
     <!-- Boxicons for Social Links -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -17,8 +18,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Water Background -->
-    <div id="water-bg"></div>
+    <!-- Overlay Animations -->
+    <div id="scroll-progress"></div>
+    <div id="cursor-glow"></div>
 
     <!-- Background Animated Shapes -->
     <div class="blob shape-1"></div>
@@ -42,13 +44,9 @@
     <!-- Hero Section -->
     <section id="hero" class="hero-section hidden-element">
         <div class="hero-content glass-card">
-            <div class="hero-image-container">
-                <img src="assets/Profile picture and certificates/Rupam profile.png" alt="Rupam Gongopadhyay" class="hero-img">
-            </div>
-            
             <div class="hero-text">
                 <h1 class="glitch-text" data-text="Rupam.">Rupam.</h1>
-                <p class="subtitle">Developer.</p>
+                <p class="subtitle" id="typewriter-text"></p>
                 
                 <div class="social-links">
                     <a href="https://www.linkedin.com/in/rupam-gongopadhyay-45116337a/" target="_blank" class="social-btn glass-btn" aria-label="LinkedIn">
@@ -64,6 +62,10 @@
                         <i class='bx bxl-github'></i>
                     </a>
                 </div>
+            </div>
+
+            <div class="hero-image-container">
+                <img src="assets/Profile picture and certificates/Rupam profile.png" alt="Rupam Gongopadhyay" class="hero-img" decoding="async">
             </div>
         </div>
     </section>
@@ -198,9 +200,6 @@
         <p>&copy; 2026 Rupam Gongopadhyay. All Rights Reserved.</p>
     </footer>
 
-    <!-- jQuery & WebGL Ripples -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
